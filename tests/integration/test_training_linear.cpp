@@ -3,12 +3,13 @@
 #include <sstream>
 #include <vector>
 #include <string>
-#include "tensor.h"
-#include "sequential.h"
-#include "sgd.h"
-#include "linear.h"
-#include "relu.h"
-#include "loss.h"
+#include "mini_torch/core/tensor.h"
+#include "mini_torch/nn/sequential.h"
+#include "mini_torch/optim/sgd.h"
+#include "mini_torch/nn/linear.h"
+#include "mini_torch/nn/relu.h"
+#include "mini_torch/nn/loss.h"
+
 std::vector<std::array<float, 4>> load_data(const std::string filename)
 {
     std::ifstream file(filename);

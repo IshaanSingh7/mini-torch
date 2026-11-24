@@ -7,27 +7,27 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # Tensor library
 add_library(mini_torch
-    src/tensor.cpp
-    src/tensor_impl.cpp
-    src/node.cpp
-    src/add_node.cpp
-    src/mul_node.cpp
-    src/div_node.cpp
-    src/sub_node.cpp
-    src/relu_node.cpp
-    src/matmul_node.cpp
-    src/sum_node.cpp
-    src/mean_node.cpp
-    src/broadcasting.cpp
-    src/linear.cpp
-    src/sequential.cpp
-    src/relu.cpp
-    src/module.cpp
-    src/optimizer.cpp
-    src/sgd.cpp
-    src/loss.cpp
-    src/scalar_mul_node.cpp
-    src/scalar_div_node.cpp
+    src/core/tensor.cpp
+    src/core/broadcasting.cpp
+    src/core/tensor_impl.cpp
+    src/autograd/node.cpp
+    src/autograd/nodes/add_node.cpp
+    src/autograd/nodes/mul_node.cpp
+    src/autograd/nodes/div_node.cpp
+    src/autograd/nodes/sub_node.cpp
+    src/autograd/nodes/relu_node.cpp
+    src/autograd/nodes/matmul_node.cpp
+    src/autograd/nodes/sum_node.cpp
+    src/autograd/nodes/mean_node.cpp
+    src/autograd/nodes/scalar_mul_node.cpp
+    src/autograd/nodes/scalar_div_node.cpp
+    src/nn/linear.cpp
+    src/nn/sequential.cpp
+    src/nn/relu.cpp
+    src/nn/module.cpp
+    src/nn/loss.cpp
+    src/optim/optimizer.cpp
+    src/optim/sgd.cpp
 )
 
 target_include_directories(mini_torch
@@ -49,34 +49,34 @@ target_link_libraries(basic
 enable_testing()
 
 add_executable(test_sgd
-    tests/test_sgd.cpp
+    tests/optim/test_sgd.cpp
 )
 
 add_executable(test_tensor
-    tests/test_tensor.cpp
+    tests/core/test_tensor.cpp
 )
 
 add_executable(test_nodes
-    tests/test_nodes.cpp
+    tests/autograd/test_nodes.cpp
 )
 add_executable(test_broadcast
-    tests/test_broadcast.cpp
+    tests/core/test_broadcast.cpp
 )
 
 add_executable(test_sequential
-    tests/test_sequential.cpp
+    tests/nn/test_sequential.cpp
 )
 
 add_executable(test_training_xor
-    tests/test_training_xor.cpp
+    tests/integration/test_training_xor.cpp
 )
 
 add_executable(test_training_linear
-    tests/test_training_linear.cpp
+    tests/integration/test_training_linear.cpp
 )
 
 add_executable(test_training_mnist
-    tests/test_training_mnist.cpp
+    tests/integration/test_training_mnist.cpp
 )
 
 

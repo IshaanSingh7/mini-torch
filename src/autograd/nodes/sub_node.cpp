@@ -1,5 +1,5 @@
-#include "sub_node.h"
-#include "broadcasting.h"
+#include "mini_torch/autograd/nodes/sub_node.h"
+#include "mini_torch/core/broadcasting.h"
 sub_node::sub_node(const tensor &x_input, const tensor &y_input)
     : x(x_input), y(y_input)
 

@@ -1,4 +1,4 @@
-#include "sum_node.h"
+#include "mini_torch/autograd/nodes/sum_node.h"
 
 sum_node::sum_node(const tensor &x_input)
     : x(x_input)

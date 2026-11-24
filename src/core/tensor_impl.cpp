@@ -1,9 +1,8 @@
-#include "tensor_impl.h"
-
 #include <numeric>
 #include <functional>
 #include <utility>
 #include <stdexcept>
+#include "mini_torch/core/tensor_impl.h"
 
 tensor_impl::tensor_impl(
     std::vector<int> dims,

@@ -1,7 +1,6 @@
 #pragma once
 #include <vector>
-
-#include "module.h"
+#include "mini_torch/nn/module.h"
 
 class sequential : public module
 {

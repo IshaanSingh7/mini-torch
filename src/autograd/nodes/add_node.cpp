@@ -1,5 +1,5 @@
-#include "add_node.h"
-#include "broadcasting.h"
+#include "mini_torch/autograd/nodes/add_node.h"
+#include "mini_torch/core/broadcasting.h"
 
 add_node::add_node(const tensor &x_input, const tensor &y_input)
     : x(x_input), y(y_input)

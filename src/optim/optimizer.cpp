@@ -1,4 +1,4 @@
-#include "optimizer.h"
+#include "mini_torch/optim/optimizer.h"
 
 optimizer::optimizer(const std::vector<tensor *> &parameters)
     : parameters(parameters)

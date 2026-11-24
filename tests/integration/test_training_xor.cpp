@@ -1,11 +1,11 @@
-#include "tensor.h"
-#include "sgd.h"
-#include "sequential.h"
-#include "linear.h"
-#include "relu.h"
+#include "mini_torch/core/tensor.h"
+#include "mini_torch/optim/sgd.h"
+#include "mini_torch/nn/sequential.h"
+#include "mini_torch/nn/linear.h"
+#include "mini_torch/nn/relu.h"
+#include "mini_torch/nn/loss.h"
 #include <memory>
 #include <iostream>
-#include "loss.h"
 #include <random>
 #include <cmath>
 

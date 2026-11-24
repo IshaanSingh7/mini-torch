@@ -1,5 +1,5 @@
 
-#include "mean_node.h"
+#include "mini_torch/autograd/nodes/mean_node.h"
 
 mean_node::mean_node(const tensor &x_input)
     : x(x_input)

@@ -1,5 +1,5 @@
-#include "div_node.h"
-#include "broadcasting.h"
+#include "mini_torch/autograd/nodes/div_node.h"
+#include "mini_torch/core/broadcasting.h"
 div_node::div_node(const tensor &x_input, const tensor &y_input)
     : x(x_input), y(y_input)
 

@@ -1,4 +1,4 @@
-#include "sgd.h"
+#include "mini_torch/optim/sgd.h"
 
 sgd::sgd(const std::vector<tensor *> &parameters, float lr)
     : optimizer(parameters), learning_rate(lr)

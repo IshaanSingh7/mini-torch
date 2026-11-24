@@ -1,4 +1,4 @@
-#include "scalar_mul_node.h"
+#include "mini_torch/autograd/nodes/scalar_mul_node.h"
 
 scalar_mul_node::scalar_mul_node(
     const tensor &x_input, float scalar)

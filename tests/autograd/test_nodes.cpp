@@ -1,9 +1,10 @@
-#include "add_node.h"
-#include "mul_node.h"
-#include "sub_node.h"
-#include "div_node.h"
-#include "relu_node.h"
-
+#include "mini_torch/autograd/nodes/add_node.h"
+#include "mini_torch/autograd/nodes/mul_node.h"
+#include "mini_torch/autograd/nodes/sub_node.h"
+#include "mini_torch/autograd/nodes/div_node.h"
+#include "mini_torch/autograd/nodes/relu_node.h"
+#include "mini_torch/core/tensor.h"
+#include <vector>
 #include <cassert>
 #include <cmath>
 #include <iostream>
@@ -557,12 +558,6 @@ void test_gradient_accumulation()
     std::cout << "gradient accumulation: PASSED\n";
 }
 
-#include <iostream>
-#include <cassert>
-#include <cmath>
-#include <vector>
-
-#include "tensor.h"
 
 // ------------------------------------------------------------
 // Helpers

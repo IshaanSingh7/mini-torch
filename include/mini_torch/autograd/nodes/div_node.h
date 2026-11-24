@@ -1,4 +1,4 @@
-#include "node.h"
+#include "mini_torch/autograd/node.h"
 
 class div_node : public node
 {

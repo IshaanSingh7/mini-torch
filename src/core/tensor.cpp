@@ -1,20 +1,21 @@
-#include "tensor.h"
-#include "tensor_impl.h"
 #include <utility>
 #include <iostream>
 #include <stdexcept>
-#include "add_node.h"
-#include "mul_node.h"
-#include "div_node.h"
-#include "sub_node.h"
-#include "relu_node.h"
-#include "matmul_node.h"
-#include "sum_node.h"
-#include "mean_node.h"
-#include "broadcasting.h"
-#include "grad_mode.h"
-#include "scalar_mul_node.h"
-#include "scalar_div_node.h"
+#include "mini_torch/core/tensor.h"
+#include "mini_torch/core/tensor_impl.h"
+#include "mini_torch/core/broadcasting.h"
+#include "mini_torch/autograd/grad_mode.h"
+#include "mini_torch/autograd/nodes/add_node.h"
+#include "mini_torch/autograd/nodes/mul_node.h"
+#include "mini_torch/autograd/nodes/div_node.h"
+#include "mini_torch/autograd/nodes/sub_node.h"
+#include "mini_torch/autograd/nodes/relu_node.h"
+#include "mini_torch/autograd/nodes/matmul_node.h"
+#include "mini_torch/autograd/nodes/sum_node.h"
+#include "mini_torch/autograd/nodes/mean_node.h"
+#include "mini_torch/autograd/nodes/scalar_mul_node.h"
+#include "mini_torch/autograd/nodes/scalar_div_node.h"
+
 tensor::tensor()
     : impl(nullptr)
 {

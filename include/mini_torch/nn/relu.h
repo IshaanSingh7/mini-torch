@@ -1,6 +1,6 @@
 #pragma once
 
-#include "module.h"
+#include "mini_torch/nn/module.h"
 
 class relu : public module
 {

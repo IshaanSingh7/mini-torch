@@ -1,7 +1,7 @@
 
 #pragma once
 
-#include "tensor.h"
+#include "mini_torch/core/tensor.h"
 #include <atomic>
 #include <cstddef>
 

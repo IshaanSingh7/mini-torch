@@ -1,6 +1,6 @@
 #include <vector>
-#include "sequential.h"
-#include "tensor.h"
+#include "mini_torch/nn/sequential.h"
+#include "mini_torch/core/tensor.h"
 
 sequential::sequential(){
 

@@ -1,5 +1,5 @@
 #pragma once
-#include "node.h"
+#include "mini_torch/autograd/node.h"
 
 class scalar_mul_node : public node
 {

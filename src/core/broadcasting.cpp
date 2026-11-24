@@ -1,5 +1,5 @@
-#include "broadcasting.h"
-#include "tensor.h"
+#include "mini_torch/core/broadcasting.h"
+#include "mini_torch/core/tensor.h"
 #include <stdexcept>
 #include <chrono>
 #include <iostream>

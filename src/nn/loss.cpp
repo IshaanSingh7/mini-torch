@@ -1,4 +1,4 @@
-#include "loss.h"
+#include "mini_torch/nn/loss.h"
 
 // tensor mse_loss(const tensor &predictions, const tensor &targets)
 // {

@@ -1,6 +1,6 @@
 #pragma once
-#include "tensor.h"
-#include "module.h"
+#include "mini_torch/core/tensor.h"
+#include "mini_torch/nn/module.h"
 class linear : public module
 {
 private:

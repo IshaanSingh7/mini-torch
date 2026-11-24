@@ -1,4 +1,4 @@
-#include "linear.h"
+#include "mini_torch/nn/linear.h"
 #include <random>
 
 // This layer will output a matrix with shape (#samples n, number of outputs you want)

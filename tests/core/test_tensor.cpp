@@ -3,8 +3,8 @@
 #include <iostream>
 #include <stdexcept>
 #include <vector>
-#include "tensor_impl.h"
-#include "tensor.h"
+#include "mini_torch/core/tensor_impl.h"
+#include "mini_torch/core/tensor.h"
 
 bool is_close(float a, float b, float tolerance = 1e-5f)
 {

@@ -1,7 +1,7 @@
 #pragma once
 
 #include <vector>
-#include "tensor.h"
+#include "mini_torch/core/tensor.h"
 
 std::vector<int> broadcast_shape(
     const std::vector<int> &x_shape,

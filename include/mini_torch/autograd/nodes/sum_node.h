@@ -1,4 +1,4 @@
-#include "node.h"
+#include "mini_torch/autograd/node.h"
 
 class sum_node : public node
 {

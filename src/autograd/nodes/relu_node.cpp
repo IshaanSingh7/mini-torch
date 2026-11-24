@@ -1,4 +1,4 @@
-#include "relu_node.h"
+#include "mini_torch/autograd/nodes/relu_node.h"
 
 relu_node::relu_node(const tensor &x_input)
     : x(x_input)

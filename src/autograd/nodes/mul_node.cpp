@@ -1,5 +1,5 @@
-#include "mul_node.h"
-#include "broadcasting.h"
+#include "mini_torch/autograd/nodes/mul_node.h"
+#include "mini_torch/core/broadcasting.h"
 
 mul_node::mul_node(const tensor &x_input, const tensor &y_input)
     : x(x_input), y(y_input)

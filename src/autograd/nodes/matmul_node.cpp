@@ -1,4 +1,4 @@
-#include "matmul_node.h"
+#include "mini_torch/autograd/nodes/matmul_node.h"
 #include <chrono>
 #include <iostream>
 

@@ -8,15 +8,15 @@
 #include <stdexcept>
 #include <algorithm>
 #include <filesystem>
-#include "tensor.h"
-#include "sequential.h"
-#include "linear.h"
-#include "relu.h"
-#include "sgd.h"
-#include "loss.h"
+#include "mini_torch/core/tensor.h"
+#include "mini_torch/nn/sequential.h"
+#include "mini_torch/nn/linear.h"
+#include "mini_torch/nn/relu.h"
+#include "mini_torch/optim/sgd.h"
+#include "mini_torch/nn/loss.h"
 #include <chrono>
-#include "tensor_impl.h"
-#include "node.h"
+#include "mini_torch/core/tensor_impl.h"
+#include "mini_torch/autograd/node.h"
 // Read a 32-bit big-endian integer from the IDX header
 std::uint32_t read_int(std::ifstream &file)
 {

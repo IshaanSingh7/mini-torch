@@ -1,4 +1,4 @@
-#include "scalar_div_node.h"
+#include "mini_torch/autograd/nodes/scalar_div_node.h"
 
 scalar_div_node::scalar_div_node(
     const tensor &x_input, float scalar)

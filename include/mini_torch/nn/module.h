@@ -1,6 +1,5 @@
 #pragma once
-#include <vector>
-#include "tensor.h"
+#include "mini_torch/core/tensor.h"
 
 class module
 {

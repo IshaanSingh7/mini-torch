@@ -4,8 +4,8 @@
 #include <iostream>
 #include <vector>
 
-#include "tensor.h"
-#include "sgd.h"
+#include "mini_torch/core/tensor.h"
+#include "mini_torch/optim/sgd.h"
 
 bool is_close(float actual, float expected, float tolerance = 1e-5f)
 {

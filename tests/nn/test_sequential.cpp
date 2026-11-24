@@ -3,10 +3,10 @@
 #include <iostream>
 #include <vector>
 
-#include "linear.h"
-#include "relu.h"
-#include "sequential.h"
-#include "tensor.h"
+#include "mini_torch/nn/linear.h"
+#include "mini_torch/nn/relu.h"
+#include "mini_torch/nn/sequential.h"
+#include "mini_torch/core/tensor.h"
 
 void assert_close(float actual, float expected, float tolerance = 1e-5f)
 {
